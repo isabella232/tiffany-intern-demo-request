@@ -11,6 +11,7 @@ const CurrentRefinements = ({ items, refine }) => {
   return (
     <ul className="refinement-content">
       {unique.map((item) => {
+        console.log(item)
         return (
           <li className="refinement-item" key={item.label}>
             {item.items ? (
@@ -31,9 +32,10 @@ const CurrentRefinements = ({ items, refine }) => {
                           {nested.label.includes(">")
                             ? nested.label.split(">")[1]
                             : nested.label}
-                          {nested.label.includes("//")
+                          {/* {nested.label.includes("//")
                             ? nested.label.split("//")[1]
-                            : nested.label}
+                            : nested.label} */}
+                            
                           <span
                             onClick={() => {
                               refine(item.value);

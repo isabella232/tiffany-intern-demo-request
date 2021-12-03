@@ -41,10 +41,10 @@ window.refinementListAttributes = [
     title: "City",
     refinement: "City",
   },
-  {
-    title: "Store Name",
-    refinement: "StoreName",
-  },
+  // {
+  //   title: "Store Name",
+  //   refinement: "StoreName",
+  // },
   { title: "Country", refinement: "Country" },
   {
     title: "Sku",
