@@ -1,0 +1,24 @@
+.hits-wrapper {
+  margin: 0 auto;
+  width: 70%;
+  .hits-list {
+    @include hits-list;
+    .hit-list {
+      @include hit-list;
+      .weight__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .Hit-list__icon {
+          width: 2rem;
+          path {
+            fill: #b8b4b4;
+          }
+        }
+        .weight__text {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
