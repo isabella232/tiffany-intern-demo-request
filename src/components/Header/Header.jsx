@@ -23,7 +23,7 @@ const Header = () => {
         </div>
       </div>
       {isShopLocatorOpen && (
-        <LocationSelector attribute="StoreName" searchable={true} limit={26} isShopLocatorOpen={isShopLocatorOpen}/>
+        <LocationSelector attribute="StoreName" searchable={true} limit={26} isShopLocatorOpen={isShopLocatorOpen} />
       )}
 
       <div className="headerMiddle">
