@@ -15,10 +15,7 @@ const SideBar = () => {
           <a href="#">Welcome Mark</a>
         </li>
         <li>
-          <a href="#">Search SKU</a>
-        </li>
-        <li>
-          <a href="#">Search Store</a>
+          <a href="#">Search</a>
         </li>
         <li>
           <a href="#">About</a>
