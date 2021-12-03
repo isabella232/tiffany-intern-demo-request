@@ -1,9 +1,8 @@
 @import "./mixin.scss";
 @import "./variables.scss";
 
-
-.hits-container{
-  width: 80%;
+.hits-container {
+  width: 75%;
   .hits-wrapper {
     margin: 0 auto;
     width: 100%;
@@ -26,7 +25,7 @@
             span {
               font-size: 0.8rem;
             }
-            .ais-Highlight-highlighted{
+            .ais-Highlight-highlighted {
               background-color: $second-color;
             }
           }
