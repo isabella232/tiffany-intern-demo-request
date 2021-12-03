@@ -1,9 +1,9 @@
 import React from 'react'
-
+import FooterImg from '../../assets/images/footer.png'
 const Footer = () => {
   return (
-    <div>
-      <h1>Footer</h1>
+    <div className='footer'>
+      <img src={FooterImg} alt="" />
     </div>
   )
 }
