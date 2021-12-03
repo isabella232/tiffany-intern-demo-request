@@ -9,6 +9,8 @@ import { CustomFilters } from "../Filters/Filters";
 import SearchBox from "../SearchBox/SearchBox";
 import { CustomCurrentRefinements } from "../Filters/CurrentRefinement";
 
+import { Stats } from 'react-instantsearch-dom';
+
 const Homepage = () => {
   // REACT STATE
   const [filterAnim, setFilterAnim] = useState(true);
@@ -16,7 +18,10 @@ const Homepage = () => {
   return (
     <div>
       <SearchBox />
-      <CustomCurrentRefinements />
+      <div className="current-stats">
+        <CustomCurrentRefinements />
+        <Stats />
+      </div>
       <div className="homepage-content">
         <CustomFilters
           filterAnim={filterAnim}
