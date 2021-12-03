@@ -21,14 +21,14 @@ const store = createStore(
 window.appID = 'T28VFYO9RS';
 window.key = 'd51558b9d3daea110f05e8c1a7b65253';
 window.index = 'Tiffany_sku_availability';
-window.recipeIndex = 'Asda_recipes';
+// window.recipeIndex = 'Asda_recipes';
 
 //SORTBY
-window.index_asc = 'Tiffany_101_v3_price_asc';
-window.index_desc = 'Tiffany_101_v3_price_desc';
+// window.index_asc = 'Tiffany_101_v3_price_asc';
+// window.index_desc = 'Tiffany_101_v3_price_desc';
 
 // QUERY SUGG
-window.indexSugg = 'Tiffany_101_v3_query_suggestions';
+// window.indexSugg = 'Tiffany_101_v3_query_suggestions';
 
 // DESCRIPTION ABOUT HOW THE FOLLOWING VARIABLES ARE USED
 // Please ensure you set your attributes in the following parts of the dashboard first:
@@ -49,15 +49,15 @@ window.refinementListAttributes = [
 ];
 
 // ADD ATTRIBUTE FOR PRICE, IF NONE LEAVE AS EMPTY STRING
-window.priceAttribute = 'PRICE_INT';
+// window.priceAttribute = 'PRICE_INT';
 
 // ADD ATTRIBUTE FOR HIERARCHY, IF NONE LEAVE AS EMPTY STRING
-window.hierarchicalCategoriesAttribute = [
-    'categories.lvl0',
-    'categories.lvl1',
-    'categories.lvl2',
-    'categories.lvl3'
-];
+// window.hierarchicalCategoriesAttribute = [
+//     'categories.lvl0',
+//     'categories.lvl1',
+//     'categories.lvl2',
+//     'categories.lvl3'
+// ];
 
 ReactDOM.render(
     <Provider store={store}>

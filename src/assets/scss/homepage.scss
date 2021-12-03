@@ -1,6 +1,35 @@
-@import './mixin.scss';
-@import './variables.scss';
+@import "./mixin.scss";
+@import "./variables.scss";
 
 h1 {
   @include title;
+}
+
+// Pagination
+.ais-Pagination {
+  margin-top: 3rem;
+  .ais-Pagination-link {
+    background-color: $second-color;
+    border-color: $second-color;
+    color: $heigth-color;
+  }
+  .ais-Pagination-item--selected .ais-Pagination-link {
+    background-color: $heigth-color;
+    border-color: $heigth-color;
+    color: white;
+  }
+}
+
+// Searchbox
+.ais-SearchBox {
+  align-items: end;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  .ais-SearchBox-form {
+    width: 65%;
+    input{
+      color: $second-color;
+    }
+  }
 }
