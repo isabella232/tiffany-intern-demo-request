@@ -38,13 +38,13 @@ window.index = 'Tiffany_sku_availability';
 // ADD ATTRIBUTES FOR REFINEMENT LISTS TO THE ARRAY, IF NONE LEAVE ARRAY EMPTY
 window.refinementListAttributes = [
     {
-        title: 'Categories',
-        refinement: 'categories.name',
+        title: 'City',
+        refinement: 'City',
     },
-    { title: 'Carat', refinement: 'CaratWeight' },
+    { title: 'Country', refinement: 'Country' },
     {
-        title: 'Description',
-        refinement: 'ProductTypeDescription',
+        title: 'Sku',
+        refinement: 'Sku',
     },
 ];
 

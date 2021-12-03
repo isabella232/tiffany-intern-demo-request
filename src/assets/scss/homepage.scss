@@ -28,7 +28,24 @@ h1 {
   margin-bottom: 2rem;
   .ais-SearchBox-form {
     width: 65%;
-    input{
+    input {
+      color: $second-color;
+    }
+  }
+}
+
+.homepage-content {
+  display: flex;
+}
+
+.current-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  .ais-Stats{
+    span{
       color: $second-color;
     }
   }
