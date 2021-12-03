@@ -1,26 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
 //REACT REDUX CONFIF
-import { createStore, applyMiddleware, compose } from 'redux';
-import thunk from 'redux-thunk';
-import rootReducer from './reducers/indexReducer';
-import { Provider } from 'react-redux';
+import { createStore, applyMiddleware, compose } from "redux";
+import thunk from "redux-thunk";
+import rootReducer from "./reducers/indexReducer";
+import { Provider } from "react-redux";
 
 // DEV TOOL
 const composeEnchancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 //CREATE STORE +IMPORT ALL REDUCER IN ONE
 const store = createStore(
-    rootReducer,
-    composeEnchancer(applyMiddleware(thunk))
+  rootReducer,
+  composeEnchancer(applyMiddleware(thunk))
 );
 
 //CHANGE ME IF USING NEW INDEX
-window.appID = 'T28VFYO9RS';
-window.key = 'd51558b9d3daea110f05e8c1a7b65253';
-window.index = 'Tiffany_sku_availability';
+window.appID = "T28VFYO9RS";
+window.key = "d51558b9d3daea110f05e8c1a7b65253";
+window.index = "Tiffany_sku_availability";
 // window.recipeIndex = 'Asda_recipes';
 
 //SORTBY
@@ -37,15 +37,27 @@ window.index = 'Tiffany_sku_availability';
 
 // ADD ATTRIBUTES FOR REFINEMENT LISTS TO THE ARRAY, IF NONE LEAVE ARRAY EMPTY
 window.refinementListAttributes = [
-    {
-        title: 'Categories',
-        refinement: 'categories.name',
-    },
-    { title: 'Carat', refinement: 'CaratWeight' },
-    {
-        title: 'Description',
-        refinement: 'ProductTypeDescription',
-    },
+  {
+    title: "City",
+    refinement: "City",
+  },
+  {
+    title: "Store Name",
+    refinement: "StoreName",
+  },
+  { title: "Country", refinement: "Country" },
+  {
+    title: "Sku",
+    refinement: "Sku",
+  },
+  {
+    title: "Categories",
+    refinement: "categories.name",
+  },
+  {
+    title: "Product Description",
+    refinement: "ProductTypeDescription",
+  },
 ];
 
 // ADD ATTRIBUTE FOR PRICE, IF NONE LEAVE AS EMPTY STRING
@@ -60,8 +72,8 @@ window.refinementListAttributes = [
 // ];
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-    document.getElementById('root')
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
 );

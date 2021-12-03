@@ -19,7 +19,7 @@ const App = () => {
       <InstantSearch searchClient={searchClient} indexName={window.index}>
         <div className="general-wrapper">
           <SideBar />
-          <div>
+          <div className='filters-hits'>
             <Header />
             <Homepage />
           </div>

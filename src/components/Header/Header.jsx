@@ -16,8 +16,9 @@ const Header = () => {
         </div>
         <div className="headerUp__right">
           <a>Shop the U.S. site</a>
-          <a className="shopLocator__btn" onClick={()=> {
+          <a className="shopLocator__btn" onClick={(e)=> {
             setIsShopLocatorOpen(!isShopLocatorOpen)
+            console.log('e',e)
           }}>Shop locator</a>
           <p>X</p>
         </div>
