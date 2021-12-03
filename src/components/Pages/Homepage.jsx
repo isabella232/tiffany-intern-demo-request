@@ -6,11 +6,13 @@ import { Configure } from "react-instantsearch-dom";
 // Import component
 import Hits from "../../components/Hits/Hits";
 import Map from "../../components/Map/Map";
+import SearchBox from "../SearchBox/SearchBox";
 import SideBar from "../SideBar/SideBar";
 
 const Homepage = () => {
   return (
     <div>
+      <SearchBox />
       <SideBar />
       <Hits />
       {/* <Map /> */}

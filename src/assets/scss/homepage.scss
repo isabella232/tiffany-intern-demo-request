@@ -19,3 +19,17 @@ h1 {
     color: white;
   }
 }
+
+// Searchbox
+.ais-SearchBox {
+  align-items: end;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  .ais-SearchBox-form {
+    width: 65%;
+    input{
+      color: $second-color;
+    }
+  }
+}
