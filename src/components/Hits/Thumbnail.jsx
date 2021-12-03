@@ -33,7 +33,7 @@ const StateResults = ({ searchResults }) => {
           }
 
           // If is a store
-          if (type == 'store') {
+          if (type == 'store_name') {
             return (
               <div key={type}>
                 <img

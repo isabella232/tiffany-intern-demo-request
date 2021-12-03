@@ -1,5 +1,5 @@
-import React, {useEffect} from "react";
-import { useDispatch } from "react-redux";
+import React, { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
 import {
   Highlight,
   connectHits,
@@ -8,7 +8,8 @@ import {
 } from 'react-instantsearch-dom'
 
 // Import framer notion anim library
-import { getHits } from "../../actions/getHits";
+import { getHits } from '../../actions/getHits'
+import { motion, AnimateSharedLayout } from 'framer-motion'
 
 import Thumbnail from './Thumbnail'
 
@@ -33,13 +34,11 @@ const HitsComponent = () => {
 export default HitsComponent
 
 const Hits = ({ hits }) => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
 
   useEffect(() => {
     dispatch(getHits(hits))
   }, [hits])
-
- 
 
   const listItem = {
     hidden: { opacity: 0, y: 100 },
