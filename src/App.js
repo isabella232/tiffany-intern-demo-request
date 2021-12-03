@@ -4,8 +4,7 @@ import algoliasearch from "algoliasearch/lite";
 
 // Import components
 import Header from "./components/Header/Header";
-import Hits from "./components/Hits/Hits";
-import Map from './components/Map/Map'
+import Homepage from "./components/Pages/Homepage";
 import Footer from './components/Footer/Footer'
 
 //CSS / SCSS
@@ -18,8 +17,7 @@ const App = () => {
     <div>
       <InstantSearch searchClient={searchClient} indexName={window.index}>
         <Header />
-        <Hits />
-        <Map />
+        <Homepage/>
         <Footer/>
       </InstantSearch>
     </div>
