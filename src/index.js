@@ -50,6 +50,14 @@ window.refinementListAttributes = [
     title: "Sku",
     refinement: "Sku",
   },
+  {
+    title: "Categories",
+    refinement: "categories.name",
+  },
+  {
+    title: "Product Description",
+    refinement: "ProductTypeDescription",
+  },
 ];
 
 // ADD ATTRIBUTE FOR PRICE, IF NONE LEAVE AS EMPTY STRING
