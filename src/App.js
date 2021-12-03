@@ -3,9 +3,10 @@ import { InstantSearch } from "react-instantsearch-dom";
 import algoliasearch from "algoliasearch/lite";
 
 // Import components
-import Header from "./components/header/Header";
-import Hits from "./components/hits/Hits";
-import Map from './components/map/Map'
+import Header from "./components/Header/Header";
+import Hits from "./components/Hits/Hits";
+import Map from './components/Map/Map'
+import Footer from './components/Footer/Footer'
 
 //CSS / SCSS
 
@@ -19,6 +20,7 @@ const App = () => {
         <Header />
         <Hits />
         <Map />
+        <Footer/>
       </InstantSearch>
     </div>
   );
