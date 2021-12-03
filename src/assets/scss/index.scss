@@ -1,16 +1,22 @@
 // import of all scss files
-@import './mixin.scss';
-@import './variables.scss';
-@import './homepage.scss';
-@import './header.scss';
-@import './shopLocator.scss';
-@import './sidebar.scss';
-@import './hits.scss';
-@import './facets.scss';
+@import "./mixin.scss";
+@import "./variables.scss";
+@import "./homepage.scss";
+@import "./header.scss";
+@import "./shopLocator.scss";
+@import "./sidebar.scss";
+@import "./hits.scss";
+@import "./facets.scss";
 
-.general-wrapper{
+.general-wrapper {
   display: flex;
 }
-.filters-hits{
+.filters-hits {
   // padding-left: 0.6rem;
+}
+
+.footer {
+  img {
+    width: 100%;
+  }
 }
