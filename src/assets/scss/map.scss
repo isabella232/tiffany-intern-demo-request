@@ -1,0 +1,18 @@
+@import "./mixin.scss";
+@import "./variables.scss";
+
+.markers{
+    .stock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(240, 102, 102);
+        border-radius: 50%;
+        height: 1rem;
+        width: 1rem;
+        span{
+            color: white;
+            font-weight: bold;
+        }
+    }
+}

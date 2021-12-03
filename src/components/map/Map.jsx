@@ -1,56 +1,76 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import GoogleMapReact from 'google-map-react';
+import { connectHits } from 'react-instantsearch-dom';
 
-const AnyReactComponent = ({ text }) => (
-    <div>
+
+const Markers = ( {text, stock} ) => (
+    <div className="markers">
+        <div className="stock"><span>{stock}</span></div>
         <img
-            onClick={e => {
-                console.log(process.env.GOOGLE_API_KEY);
-            }}
             src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/256/map-marker-icon.png"
             style={{ height: '50px', width: '50px' }}
         />
     </div>
 );
 
-export default class Map extends Component {
-    static defaultProps = {
+
+const Map = () => {
+    const [allHits, setAllHits] = useState(null)
+    const mapStyles = {
+        width: '100%',
+        height: '100%',
+        position: 'relative'
+    };
+
+    const defaultProps = {
         zoom: 11,
         center: {
             lat: 40.7128,
             lng: -74.006
         }
     };
+    
+    const getHits = async () => {
+        let {hits} = await useSelector(state => state.hits) 
+        return hits
+        }
+        getHits().then(hits => {
+            setAllHits(hits)
+        })
 
-    render() {
-        const mapStyles = {
-            width: '100%',
-            height: '100%',
-            position: 'relative'
-        };
-        return (
-            <div
-                className="google-map"
-                style={{
-                    width: '100%',
-                    height: '100vh'
+    return (
+        
+        <div
+            className="google-map"
+            style={{
+                width: '100%',
+                height: '100vh'
+            }}
+        >
+            <GoogleMapReact
+                bootstrapURLKeys={{
+                    key: process.env.REACT_APP_GOOGLE_API_KEY
                 }}
+                style={mapStyles}
+                center={defaultProps.center}
+                defaultZoom={defaultProps.zoom}
             >
-                <GoogleMapReact
-                    bootstrapURLKeys={{
-                        key: process.env.GOOGLE_API_KEY
-                    }}
-                    style={mapStyles}
-                    center={this.props.center}
-                    defaultZoom={this.props.zoom}
-                >
-                    <AnyReactComponent
-                        lat={40.7128}
-                        lng={-74.006}
-                        text={'Kreyser Avrora'}
+            {allHits && (
+               allHits.map(hit => (
+                    <Markers
+                    // stock={hit.sku_physicalShops_stock}
+                    lat={hit._geoloc.lat}
+                    lng={hit._geoloc.lng}
+                    text={'Kreyser Avrora'}
+                    stock={hit.sku_physicalShops_stock}
                     />
-                </GoogleMapReact>
-            </div>
-        );
-    }
+               ))
+           )}    
+            </GoogleMapReact>
+        </div>
+    );
 }
+
+
+export default Map

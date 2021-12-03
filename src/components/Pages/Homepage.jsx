@@ -5,7 +5,7 @@ import { Configure } from "react-instantsearch-dom";
 
 // Import component
 import Hits from "../../components/Hits/Hits";
-import Map from "../../components/Map/Map";
+import Map from "../../components/map/Map";
 import SearchBox from "../SearchBox/SearchBox";
 
 const Homepage = () => {
@@ -13,7 +13,7 @@ const Homepage = () => {
     <div>
       <SearchBox />
       <Hits />
-      {/* <Map /> */}
+      <Map />
     </div>
   );
 };
