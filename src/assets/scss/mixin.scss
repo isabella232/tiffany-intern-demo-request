@@ -1,5 +1,5 @@
 // Import of variables
-@import './variables.scss';
+@import "./variables.scss";
 
 // BUTTONS
 
@@ -52,41 +52,46 @@
   border: 1px solid $seventh-color;
 
   .infos {
-      position: relative;
-      h3 {
-          margin: 1rem auto;
-          font-size: 0.8rem;
-          // text-overflow: ellipsis;
-          // overflow: hidden;
-          // white-space: nowrap;
-          text-align: center;
+    position: relative;
+    h3 {
+      margin: 1rem auto;
+      font-size: 0.8rem;
+      // text-overflow: ellipsis;
+      // overflow: hidden;
+      // white-space: nowrap;
+      text-align: center;
+    }
+    p {
+      font-size: 0.8rem;
+      font-weight: 200;
+    }
+    .infos__card-svg {
+      svg {
+        position: absolute;
+        right: 0;
+        top: 5rem;
       }
-      p {
-          font-size: 0.8rem;
-          font-weight: 200;
-      }
-      .infos__card-svg {
-          svg {
-              position: absolute;
-              right: 0;
-              top: 5rem;
-          }
-      }
+    }
   }
 
-  .phone{
-    text-align: end;
+  .phone {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    p {
+      font-size: 0.8rem;
+    }
   }
 
   .image-wrapper {
-      width: 100%;
+    width: 100%;
 
-      img {
-          width: 100%;
-          background-image: $third-color;
-          object-fit: cover;
-          object-position: center;
-          position: relative;
-      }
+    img {
+      width: 100%;
+      background-image: $third-color;
+      object-fit: cover;
+      object-position: center;
+      position: relative;
+    }
   }
 }
