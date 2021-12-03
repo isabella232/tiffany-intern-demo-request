@@ -5,12 +5,12 @@ import {
   connectHits,
   Configure,
   Pagination,
-} from "react-instantsearch-dom";
+} from 'react-instantsearch-dom'
 
 // Import framer notion anim library
-import { motion, AnimateSharedLayout } from "framer-motion";
 import { getHits } from "../../actions/getHits";
 
+import Thumbnail from './Thumbnail'
 
 const HitsComponent = () => {
   return (
@@ -20,13 +20,17 @@ const HitsComponent = () => {
         // userToken={persona}
         // filters={shop ? `shop_availability:'${shop}'` : ''}
       />
+
+      {/* Product thumbnail */}
+      <Thumbnail />
+
       <CustomHits />
       <Pagination />
     </div>
-  );
-};
+  )
+}
 
-export default HitsComponent;
+export default HitsComponent
 
 const Hits = ({ hits }) => {
   const dispatch = useDispatch();
@@ -46,7 +50,7 @@ const Hits = ({ hits }) => {
         delay: 0.2,
       },
     },
-  };
+  }
   return (
     <AnimateSharedLayout>
       <div className="hits-wrapper">
@@ -187,7 +191,7 @@ const Hits = ({ hits }) => {
         </ul>
       </div>
     </AnimateSharedLayout>
-  );
-};
+  )
+}
 
-const CustomHits = connectHits(Hits);
+const CustomHits = connectHits(Hits)
