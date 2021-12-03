@@ -28,3 +28,64 @@
   color: $second-color;
   text-transform: uppercase;
 }
+
+// HITS LIST (PARENT)
+@mixin hits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+}
+
+// HIT LIST (individual child)
+
+@mixin hit-list {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border: $third-color solid 1px;
+  margin: 0.2rem;
+  padding: 1rem;
+  cursor: pointer;
+  border: 1px solid $seventh-color;
+
+  .infos {
+      position: relative;
+      h3 {
+          margin: 1rem auto;
+          font-size: 0.8rem;
+          // text-overflow: ellipsis;
+          // overflow: hidden;
+          // white-space: nowrap;
+          text-align: center;
+      }
+      p {
+          font-size: 0.8rem;
+          font-weight: 200;
+      }
+      .infos__card-svg {
+          svg {
+              position: absolute;
+              right: 0;
+              top: 5rem;
+          }
+      }
+  }
+
+  .phone{
+    text-align: end;
+  }
+
+  .image-wrapper {
+      width: 100%;
+
+      img {
+          width: 100%;
+          background-image: $third-color;
+          object-fit: cover;
+          object-position: center;
+          position: relative;
+      }
+  }
+}
