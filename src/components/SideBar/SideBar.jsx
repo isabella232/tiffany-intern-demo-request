@@ -14,8 +14,8 @@ const SideBar = () => {
   const dispatch = useDispatch();
   return (
     <div>
-      <ul class="sidebar">
-        <li class="sidebar-brand">
+      <ul className="sidebar">
+        <li className="sidebar-brand">
           <img
             src={Logo}
             alt=""

@@ -11,7 +11,7 @@ import { motion, AnimateSharedLayout } from "framer-motion";
 
 const HitsComponent = () => {
   return (
-    <div>
+    <div className="hits-container">
       <Configure
         hitsPerPage={18}
         // userToken={persona}
