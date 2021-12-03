@@ -2,5 +2,11 @@
 @import './mixin.scss';
 @import './variables.scss';
 @import './homepage.scss';
+@import './header.scss';
+@import './shopLocator.scss';
 @import './sidebar.scss';
 @import './hits.scss';
+
+.general-wrapper{
+  display: flex;
+}

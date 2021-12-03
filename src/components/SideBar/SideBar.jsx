@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import { goToSearch, goToHome } from "../../actions/navigationAction";
 
 // Import assets
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../assets/images/logoSideBar.png";
 
 const SideBar = () => {
   // Defin the redux dispqtch in component

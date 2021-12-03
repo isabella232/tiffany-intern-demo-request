@@ -1,0 +1,78 @@
+@import './mixin.scss';
+@import './variables.scss';
+
+
+.shopLocator{
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $second-color;
+    color: black;
+    overflow-y: scroll;
+    padding: 1rem;
+    z-index: 1000;
+
+    h2{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 1rem 0 0 8rem;
+    }
+}
+
+.shopLocator__input{
+    margin: 2rem 5rem 0 8rem;
+    border: solid #abebe5 1px;
+    border-radius: 2px;
+    padding: 0.3rem 0.3rem;
+    width: 20%;
+    background-color: #ffffff;
+    outline: none;
+
+    &::placeholder{
+        color: #919191;
+        font-size: 0.7rem;
+    }
+}
+
+.shopLocator__list{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    // grid-gap: 1rem;
+    align-items: center;
+    padding: 1rem 5rem;
+    overflow-y: scroll;
+    margin: 0rem auto;
+    justify-content: center;
+
+    li{
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+        cursor: pointer;
+        transition: color 0.2s ease-in;
+
+        &:hover{
+            color: white;
+            transition: color 0.2s ease-in;
+        }
+        
+    }
+}
+
+
+.shopLocator__active{
+    animation: shopAnimation 0.3s forwards ;
+}
+
+@keyframes shopAnimation {
+    0%{
+        opacity: 0;
+        transform: translate3d(-50%, -20%,0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(-50%, 0, 0);
+    }
+}
