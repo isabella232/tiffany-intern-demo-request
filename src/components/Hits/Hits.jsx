@@ -71,7 +71,9 @@ const Hits = ({ hits }) => {
                     fill="#B7B4B4"
                   />
                 </svg>
-                <p className="weight__text">{hit.StoreName}</p>
+                <p className="weight__text">
+                  <Highlight hit={hit} attribute="StoreName" />
+                </p>
               </div>
               <div className="infos">
                 <h3>

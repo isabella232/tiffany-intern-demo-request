@@ -17,8 +17,16 @@
         }
         .weight__text {
           font-size: 0.8rem;
+          span {
+            font-size: 0.8rem;
+          }
+          .ais-Highlight-highlighted{
+            background-color: $second-color;
+          }
         }
       }
     }
   }
 }
+
+// Highlight
