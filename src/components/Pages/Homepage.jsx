@@ -12,9 +12,7 @@ const Homepage = () => {
   return (
     <div>
       <SideBar />
-
       <Hits />
-
       {/* <Map /> */}
     </div>
   );

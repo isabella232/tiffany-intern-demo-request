@@ -1,5 +1,10 @@
 import React from "react";
-import { Highlight, connectHits } from "react-instantsearch-dom";
+import {
+  Highlight,
+  connectHits,
+  Configure,
+  Pagination,
+} from "react-instantsearch-dom";
 
 // Import framer notion anim library
 import { motion, AnimateSharedLayout } from "framer-motion";
@@ -8,6 +13,7 @@ const HitsComponent = () => {
   return (
     <div>
       <CustomHits />
+      <Pagination />
     </div>
   );
 };

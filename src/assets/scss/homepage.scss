@@ -4,3 +4,14 @@
 h1 {
   @include title;
 }
+
+// Pagination
+.ais-Pagination-link{
+  background-color: $second-color;
+  border-color: $second-color;
+  color: $heigth-color;
+}
+.ais-Pagination-item--selected .ais-Pagination-link{
+  background-color: $heigth-color;
+  border-color: $heigth-color;
+}
