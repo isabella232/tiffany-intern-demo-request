@@ -22,7 +22,7 @@ const Map = ({}) => {
     const [allHits, setAllHits] = useState(null)
     const [location, setLocation] = useState({lat: 40.7128, lng: -74.006})
     const [zoom, setZoom] = useState(1)
-    console.log(zoom)
+
     
 
     const mapStyles = {
