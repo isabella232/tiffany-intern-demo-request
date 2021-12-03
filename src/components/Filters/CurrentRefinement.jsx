@@ -35,6 +35,7 @@ const CurrentRefinements = ({ items, refine }) => {
                           {/* {nested.label.includes("//")
                             ? nested.label.split("//")[1]
                             : nested.label} */}
+                            
                           <span
                             onClick={() => {
                               refine(item.value);
