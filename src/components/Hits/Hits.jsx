@@ -8,8 +8,9 @@ import {
 } from 'react-instantsearch-dom'
 
 // Import framer notion anim library
-import { getHits } from '../../actions/getHits'
-import { motion, AnimateSharedLayout } from 'framer-motion'
+import { motion, AnimateSharedLayout } from 'framer-motion';
+
+import { getHits } from "../../actions/getHits";
 
 import Thumbnail from './Thumbnail'
 
