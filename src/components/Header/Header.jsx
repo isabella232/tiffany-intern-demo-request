@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { useSelector } from 'react-redux';
 import LocationSelector from './LocationSelector'
 import logo from '../../assets/images/logo.png';
 import header_rightMenu from '../../assets/images/header_rightMenu.png';
@@ -15,14 +16,15 @@ const Header = () => {
         </div>
         <div className="headerUp__right">
           <a>Shop the U.S. site</a>
-          <a className="shopLocator__btn" onClick={()=> {
+          <a className="shopLocator__btn" onClick={(e)=> {
             setIsShopLocatorOpen(!isShopLocatorOpen)
+            console.log('e',e)
           }}>Shop locator</a>
           <p>X</p>
         </div>
       </div>
       {isShopLocatorOpen && (
-        <LocationSelector attribute="StoreName" searchable={true} limit={26} isShopLocatorOpen={isShopLocatorOpen}/>
+        <LocationSelector attribute="StoreName" searchable={true} limit={26} isShopLocatorOpen={isShopLocatorOpen} />
       )}
 
       <div className="headerMiddle">

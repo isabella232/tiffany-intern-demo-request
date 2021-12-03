@@ -9,7 +9,6 @@ import {
 // expects an attribute which is an array of items
 const RefinementList = ({ title, items, refine, searchForItems }) => {
   const [showfacet, setshowfacet] = useState(false);
-  console.log("RefinementList", items);
   // const dispatch = useDispatch();
   return (
     <div className="filters-content">
@@ -73,7 +72,6 @@ const GenericRefinementList = connectRefinementList(RefinementList);
 
 // MAIN COMPONENT
 const CustomFilters = ({ filterAnim }) => {
-  console.log("CustomFilters", window.refinementListAttributes);
   return (
     <div
       className={`filters-wrapper ${

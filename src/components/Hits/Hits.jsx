@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect} from "react";
+import { useDispatch } from "react-redux";
 import {
   Highlight,
   connectHits,
@@ -8,6 +9,8 @@ import {
 
 // Import framer notion anim library
 import { motion, AnimateSharedLayout } from "framer-motion";
+import { getHits } from "../../actions/getHits";
+
 
 const HitsComponent = () => {
   return (
@@ -26,7 +29,14 @@ const HitsComponent = () => {
 export default HitsComponent;
 
 const Hits = ({ hits }) => {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getHits(hits))
+  }, [hits])
+
+ 
+
   const listItem = {
     hidden: { opacity: 0, y: 100 },
     show: {
