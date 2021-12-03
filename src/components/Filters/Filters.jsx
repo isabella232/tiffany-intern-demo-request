@@ -82,15 +82,18 @@ const CustomFilters = ({ filterAnim }) => {
     >
       <div>
         {/* <CustomStateResults /> */}
-
-        {window.refinementListAttributes.map((e, index) => (
-          <GenericRefinementList
-            attribute={e.refinement}
-            title={e.title}
-            searchable
-            key={index}
-          />
-        ))}
+        <ExperimentalDynamicWidgets
+        // fallbackComponent={Menu}
+        >
+          {window.refinementListAttributes.map((e, index) => (
+            <GenericRefinementList
+              attribute={e.refinement}
+              title={e.title}
+              searchable
+              key={index}
+            />
+          ))}
+        </ExperimentalDynamicWidgets>
       </div>
     </div>
   );
