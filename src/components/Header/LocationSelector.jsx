@@ -18,6 +18,8 @@ const ShopSelector = ({items, refine, searchForItems, setIsShopLocatorOpen, isSh
             return (
                 <li onClick={()=> {
                     refine(item.label)
+                    setIsShopLocatorOpen(false)
+
                 }} key={item.label}>
                     {item.label}
                 </li>

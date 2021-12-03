@@ -2,6 +2,7 @@
 @import "./variables.scss";
 
 .header {
+    position: relative;
   .headerUp {
     background-color: $second-color;
     display: flex;

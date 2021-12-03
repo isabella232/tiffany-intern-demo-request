@@ -4,15 +4,16 @@
 
 .shopLocator{
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     top: 2rem;
     left: 50%;
-    transform: translateX(-50%);
+    // transform: translateX(-50%);
     background-color: $second-color;
     color: black;
     overflow-y: scroll;
     padding: 1rem;
+    z-index: 1000;
     
 
     h2{
@@ -66,10 +67,15 @@
     animation: shopAnimation 0.3s forwards ;
 }
 
+.shopLocator__inactive{
+    display: none;
+}
+
 @keyframes shopAnimation {
     0%{
         opacity: 0;
         transform: translate3d(-50%, -20%,0);
+        
     }
     100%{
         opacity: 1;

@@ -23,9 +23,11 @@ const Header = () => {
           <p>X</p>
         </div>
       </div>
-      {isShopLocatorOpen && (
-        <LocationSelector attribute="StoreName" searchable={true} limit={26} isShopLocatorOpen={isShopLocatorOpen} />
-      )}
+      {/* {isShopLocatorOpen && ( */}
+      <div className={`shopLocator ${isShopLocatorOpen ? "shopLocator__active" : "shopLocator__inactive" }`}>
+        <LocationSelector attribute="StoreName" searchable={true} limit={26} isShopLocatorOpen={isShopLocatorOpen} setIsShopLocatorOpen={setIsShopLocatorOpen} />
+      </div>
+      {/* )} */}
 
       <div className="headerMiddle">
         <ul className="headerMiddle__left">
