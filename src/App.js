@@ -17,11 +17,13 @@ const App = () => {
   return (
     <div>
       <InstantSearch searchClient={searchClient} indexName={window.index}>
-        <div className='general-wrapper'>
+        <div className="general-wrapper">
           <SideBar />
-          <Header />
+          <div>
+            <Header />
+            <Homepage />
+          </div>
         </div>
-        <Homepage />
         <Footer />
       </InstantSearch>
     </div>
