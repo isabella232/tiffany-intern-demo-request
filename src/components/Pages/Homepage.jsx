@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 // Import component
 import Hits from "../../components/Hits/Hits";
-import Map from "../../components/Map/Map";
+import Map from "../Map/Map";
 import { CustomFilters } from "../Filters/Filters";
 import SearchBox from "../SearchBox/SearchBox";
 import { CustomCurrentRefinements } from "../Filters/CurrentRefinement";
