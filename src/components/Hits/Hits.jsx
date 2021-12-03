@@ -13,7 +13,7 @@ const HitsComponent = () => {
   return (
     <div className="hits-container">
       <Configure
-        hitsPerPage={18}
+        hitsPerPage={21}
         // userToken={persona}
         // filters={shop ? `shop_availability:'${shop}'` : ''}
       />
