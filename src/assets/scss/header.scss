@@ -1,82 +1,79 @@
-@import './mixin.scss';
-@import './variables.scss';
+@import "./mixin.scss";
+@import "./variables.scss";
 
-.headerUp{
+.header {
+  width: 80%;
+  .headerUp {
     background-color: $second-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
 
-    .headerUp__left{
-        p{
-            font-size: 0.8rem;
-        }
+    .headerUp__left {
+      p {
+        font-size: 0.8rem;
+      }
     }
 
-    .headerUp__right{
-        display: flex;
-        align-items: center;
-        gap: 2rem;
+    .headerUp__right {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
 
-        .shopLocator__btn{
-            font-weight: bold;
-        }
+      .shopLocator__btn {
+        font-weight: bold;
+      }
 
-        a{
-            font-size: 0.8rem;
-            font-family: $main-font;
-            cursor: pointer;
-        }
-        p{
-            font-size: 0.8rem;
-        }
+      a {
+        font-size: 0.8rem;
+        font-family: $main-font;
+        cursor: pointer;
+      }
+      p {
+        font-size: 0.8rem;
+      }
     }
+  }
 }
 
+.headerMiddle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem auto 0 auto;
 
-.headerMiddle{
+  .headerMiddle__left {
     display: flex;
     align-items: center;
+    width: 25%;
+
+    svg {
+      margin: 0 1rem;
+      width: 20px;
+    }
+  }
+
+  .headerMiddle_rightMenu {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.headerDown {
+  width: 80%;
+  margin: 1rem auto;
+  ul {
+    display: flex;
     justify-content: space-between;
-    margin: 1rem auto 0 auto;
+    align-items: center;
 
-    .headerMiddle__left{
-        display: flex;
-        align-items: center;
-        width: 25%;
-
-
-        svg{
-            margin: 0 1rem;
-            width: 20px;
-           
-        }
+    li {
+      font-size: 0.8rem;
     }
-
-    .headerMiddle_rightMenu{
-        display: flex;
-        align-items: center;
-        width: 25%;
-        img{
-            width: 100%;
-        }
-    }
+  }
 }
-
-.headerDown{
-    width: 80%;
-    margin: 1rem auto;
-    ul{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        li{
-            font-size: 0.8rem;
-        }
-    }
-}
-
-
-
