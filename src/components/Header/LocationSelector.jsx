@@ -3,7 +3,6 @@ import { connectRefinementList } from 'react-instantsearch-dom';
 
 
 const ShopSelector = ({items, refine, searchForItems, setIsShopLocatorOpen, isShopLocatorOpen}) => {
-    console.log(items)
     return ( 
         <div className={`shopLocator ${isShopLocatorOpen && "shopLocator__active"}`}>
             <h2>Shop Locator</h2>
