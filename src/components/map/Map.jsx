@@ -18,7 +18,7 @@ const Markers = ( {text, stock, setLocation, geoloc, setZoom} ) => (
 );
 
 
-const Map = ({}) => {
+const MapComponent = ({}) => {
     const [allHits, setAllHits] = useState(null)
     const [location, setLocation] = useState({lat: 40.7128, lng: -74.006})
     const [zoom, setZoom] = useState(1)
@@ -78,4 +78,4 @@ const Map = ({}) => {
 }
 
 
-export default Map
+export default MapComponent

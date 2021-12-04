@@ -5,7 +5,7 @@ import React, { useState } from "react";
 // Import component
 import Hits from "../components/Hits/Hits";
 
-import Map from "../components/Map/Map";
+import GMap from "../components/Map/Map";
 import { CustomFilters } from "../components/Filters/Filters";
 import SearchBox from "../components/SearchBox/SearchBox";
 import { CustomCurrentRefinements } from "../components/Filters/CurrentRefinement";
@@ -31,7 +31,7 @@ const Homepage = () => {
         />
         <Hits />
       </div>
-      <Map />
+      <GMap />
     </div>
   );
 };
