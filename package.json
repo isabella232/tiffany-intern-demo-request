@@ -18,7 +18,6 @@
   "bugs": {
     "url": "https://github.com/algolia/tiffany-intern-demo-request/issues"
   },
-  "homepage": "https://github.com/algolia/tiffany-intern-demo-request#readme",
   "dependencies": {
     "@algolia/react-recommendations": "^ 1.0.0-beta",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
