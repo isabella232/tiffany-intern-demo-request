@@ -3,12 +3,12 @@ import React, { useState } from "react";
 // Import features from IS
 
 // Import component
-import Hits from "../../components/Hits/Hits";
+import Hits from "../components/Hits/Hits";
 
-import Map from "../../components/Map/Map";
-import { CustomFilters } from "../Filters/Filters";
-import SearchBox from "../SearchBox/SearchBox";
-import { CustomCurrentRefinements } from "../Filters/CurrentRefinement";
+import Map from "../components/Map/Map";
+import { CustomFilters } from "../components/Filters/Filters";
+import SearchBox from "../components/SearchBox/SearchBox";
+import { CustomCurrentRefinements } from "../components/Filters/CurrentRefinement";
 
 import { Stats } from "react-instantsearch-dom";
 
