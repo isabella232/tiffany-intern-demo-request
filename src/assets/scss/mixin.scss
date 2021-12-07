@@ -73,9 +73,15 @@
       }
     }
     .stock {
-      display: flex;
-      align-items: center;
-      justify-content: end;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      margin: 1rem 0 0 0;
+      .physical-stock {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
 
