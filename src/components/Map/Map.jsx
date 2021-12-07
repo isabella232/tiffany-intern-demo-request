@@ -12,7 +12,7 @@ const Markers = ( {text, stock, setLocation, geoloc, setZoom} ) => (
         <div className="stock"><span>{stock}</span></div>
         <img
             src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/256/map-marker-icon.png"
-            style={{ height: '50px', width: '50px' }}
+            style={{ height: '30px', width: '30px' }}
         />
     </div>
 );
